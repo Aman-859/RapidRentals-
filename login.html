@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid fw-bold">
+         
+           <div class="mx-auto"> 
+          <a class="navbar-brand " href="index.html">RapidRentals </a></div>
+          
+          <!-- Collapsing navbar items -->
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active"  href="index.html" style="color: rgb(72, 72, 206);">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Rent Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Contant Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center gap-2"> 
+            <a href="login.html">
+                <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init data-mdb-ripple-color="dark">Login</button>
+            </a>
+            <a href="signup.html">
+                <button type="button" class="btn btn-primary" data-mdb-ripple-init>Sign Up</button>
+            </a>  
+        </div>
+        </div>
+    </nav> 
+    <!--Login Page-->
+    <div class="container d-flex justify-content-center align-items-center " style="margin-top: 100px;" >
+        <div class="card p-4 shadow" style="width: 22rem;">
+            <div class="text-center mb-3">
+                <h4>Login</h4>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+<!---footer-->
+<div  class="row footer" >
+    <!--get in touch-->
+   <div class="col-md-4">
+    <h4 class="text-uppercase mt-5 txt2 gettouch">Get In Touch</h4>
+    <p class="pt-3 text  gettouch"><i class="fa fa-map-marker-alt mr-3 "></i> &nbsp;123 Street, New York, USA</p>
+    <p class="text  gettouch"><i class="fa fa-phone-alt mr-3"></i>&nbsp;+012 345 67890</p>
+    <p class="text  gettouch"><i class="fa fa-envelope mr-3"></i>&nbsp; info@example.com</p>
+    
+    <p class="mt-4 txt2  gettouch">Follow Us</p>
+     <div class="container" style=" width:50%; margin-right: 190px; margin-bottom: 30px;">
+   <!--facebook-->
+      <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body icon2"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f mr-5"></i
+        ></a>
+  <!--twitter-->
+  <a
+  data-mdb-ripple-init
+  class="btn btn-link btn-floating btn-lg text-body icon2"
+  href="#!"
+  role="button"
+  data-mdb-ripple-color="dark"ō
+  ><i class="fab fa-twitter"></i
+  ></a>
+  <!--instagram-->
+  <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body icon2 "
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+     </div>
+   </div>
+   <!--useful links-->
+   <div class="col-md-4">
+    <h4 class="text-uppercase mt-5 txt2 gettouch">Useful Links</h4>
+    <div class=" useful_links"> 
+    <ul class="list-unstyled mb-0 text mx-auto">
+      <li>
+        <a href="#!" class="text-body ">Private Policy</a>
+      </li>
+      <li class="mt-2">
+        <a href="#!" class="text-body ">Term & Condition</a>
+      </li>
+      <li class="mt-2">
+        <a href="#!" class="text-body ">New Member Registration</a>
+      </li>
+      <li class="mt-2">
+        <a href="#!" class="text-body">Afilliate Program</a>
+      </li>
+      <li class="mt-2">
+        <a href="#!" class="text-body">Return & Refund</a>
+      </li>
+      <li class="mt-2">
+        <a href="#!" class="text-body">Help & FQAs</a>
+      </li>
+    </ul></div>
+   </div>
+   <!--newsletter-->
+   <div class="col-md-4">
+    <h4 class="text-uppercase mt-5 txt2 text-center">News Letter</h4>
+    <p class="text">Get the best car rental deals, exclusive discounts,
+      and travel tips delivered straight to your inbox! Subscribe now and make every ride smoother and more affordable.</p>
+    
+    <form  id="form"> 
+      <input type="email" class="form-control" style="padding: 15px;" name="email" placeholder="Your Email" required>
+      <button type="submit" class="sub">Subscribe</button>
+    </form>
+  </div>
+  
+     
+  </div>
+</body>
+</html>

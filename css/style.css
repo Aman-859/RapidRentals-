@@ -1,0 +1,191 @@
+.main_content{
+    height: 600px; background-color: whitesmoke;
+}
+.navright{
+    background-image: linear-gradient(155deg, #a7ceff, #bfc9cb); width: 400px; height: 300px;    margin-top: 100px; margin-left: 200px;   border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+}
+.location{
+    background-color: white; height: 150px;    width: 70% ;  margin-top: 50px;
+    border-radius: 20px;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#pick{
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#loctext{
+    margin-left: 5px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+ 
+.button{
+    /* margin-top: 30px; */
+     align-content: center;
+     margin-left: 20px;
+     width: 100px;
+    
+}
+#Latest{
+    margin-top: 70px;
+    font-size: 4rem;
+    font-weight: bold;
+}
+#p{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.card{
+     width: 300px;
+    
+    
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /*Soft shadow*/
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+    margin-top: 40px;
+    
+       
+}
+.card:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Elevation effect on hover */
+    transform: translateY(-5px);
+}
+
+
+.img-fluid{
+    background-color: #f4f5f8;
+    height: fit-content;
+    width: 300px;
+}
+.auto{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.card-title{
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rent_button{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.support{
+    height: 300px;
+    background-color: whitesmoke;
+    margin-top: 170px;
+}
+.txt1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.icon{
+     
+    font-size: 30px;
+    background: #0043ff8c;
+    width: fit-content;
+    padding: 34px;
+    border-radius: 15px;
+    
+}
+.support_txt{
+    font-size: 30px;
+    font-weight: 700;
+}
+#achie{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+#txtachie{
+    text-align: center;
+    font-weight: bold;
+}
+.box{
+    box-shadow: rgba(79, 110, 141, 0.2) 0px 8px 24px;
+    margin-top: 30px;
+    border-radius: 10px;
+    height:150px;
+    padding-top: 30px;
+    /* align-items: center; */
+    /* align-self: center; */
+}
+.get{
+     
+    height: 390px;
+    background-image: linear-gradient(45deg, #17c5be, #1c243a);
+     
+    width: 97%;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.left{
+    margin-top: 80px;
+    margin-left: 140px;
+    
+    
+    width: 100%;
+}
+#contanct{
+    margin-top: 20px;
+    margin-right: 320px
+}
+.right{
+    background-image: linear-gradient(155deg, #a7ceff, #bfc9cb); width: 400px; height: 300px;  
+      margin-top: 50px; 
+      margin-left: 200px;  
+     border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.footer{
+    background-color: whitesmoke; height: 380px; margin: auto; margin-top: 70px;
+}
+.gettouch{
+padding-left: 60px;
+}
+.text{
+    font-weight: bold;
+    
+}
+.txt2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.icon2{
+    
+    background-color:#0043ff8c;
+}
+.icon2:hover{
+    background-color: #0043ff8c;
+}
+.useful_links{
+    margin-left: 70px;
+     margin-top: 10px;
+      
+}
+.text-body{
+    text-decoration: none;
+    font-size: large;
+    
+}
+.sub{
+     margin-left: 200px;
+     margin-top: 20px;
+     text-decoration: none;
+     color: #f4f5f8;
+     background-color: #0043ff8c;
+     height: 50px; width: 100px; border-radius: 20px;
+     border: none;
+}
+

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RapidRentals</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body style="overflow-x: hidden;">
+
+  <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid fw-bold">
+         
+           <div class="mx-auto"> 
+          <a class="navbar-brand " href="#">RapidRentals</a></div>
+          
+          <!-- Collapsing navbar items -->
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active"  href="index.html" style="color: rgb(72, 72, 206);">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Rent Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Contant Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center gap-2"> 
+            <a href="login.html">
+                <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init data-mdb-ripple-color="dark">Login</button>
+            </a>
+            <a href="signup.html">
+                <button type="button" class="btn btn-primary" data-mdb-ripple-init>Sign Up</button>
+            </a>  
+        </div>
+        </div>
+    </nav>
+      
+   <!--main content-->   
+<div class="container-fluid main_content"> 
+    <div class="row justify-content-center">
+         <!--Left text-->
+        <div class="col-md-6 text-center container-fluid" >
+            <div style="margin-top: 50px; font-weight: 700; font-size: 4rem;"> 
+            <div style="margin-bottom: 10px; margin-right: 130px;">Easy And Fast</div>
+            <div style="margin-bottom: 10px;">Way To Rent Your</div>
+            <div  style=" margin-right: 400px;"><span style="color: #0043ff8c;">CAR</span></div>
+        </div>
+        <div class="text-center"> 
+            <div>Drive Your Journey with Ease – Affordable Car Rentals at Your Fingertips</div>
+            <div style="margin-right: 150px;">Explore, Travel, and Adventure Anytime, Anywhere.</div>
+            <div style="margin-right: 97px;">Seamless Rentals, Exceptional Service – Your Road Awaits!"</div>
+        </div>
+        <div style="margin-right: 420px; margin-top: 20px;">
+            <a >
+                <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init data-mdb-ripple-color="dark">Rent Car</button></a>
+        </div>
+        
+              
+        </div>
+        <!--right image-->
+        <div class="col-md-6 container-fluid  navright"> 
+            <img src="images/bmw-22428.png" alt="" width="380px" >
+        </div>
+      <!--Pick Up Return-->
+        <div  class="mx-auto location row mx-auto " >
+        <div  class="col-md-3">
+          <form> 
+          <p id="pick">Pick Up Location</p>
+        <i class="bi bi-geo-alt "></i>  
+          <input type="text" placeholder="Enter a Location" id="loctext" required>
+        </div>
+        <div  class="col-md-3">
+          <p id="pick">Return Location</p>
+          <i class="bi bi-geo-alt "></i>  
+          <input type="text" placeholder="Enter a Location" id="loctext" required>
+        </div>
+        <div  class="col-md-2">
+          <p id="pick">Pick Up Date</p>
+          <input type="date" placeholder="Enter a Location" id="loctext" required min="2025-02-02">
+        </div>
+        <div  class="col-md-2">
+          <p id="pick">Return Date</p>
+          <input type="date" placeholder="Enter a Location" id="loctext" required>
+        </div>
+        <div  class="col-md-2 button">
+          <a >
+            <button type="submit" class="btn btn-outline-primary" data-mdb-ripple-init data-mdb-ripple-color="dark" style="width:100% ;">Search</button></a>
+          </form>
+        </div>
+         
+          
+         
+        
+        
+           
+        </div>
+</div>
+<!--latest inventory heading-->
+<div id="main2" style="background-color: white; ">
+  <div id="Latest" class="text-center">
+    Latest <span style="color: #0043ff8c;">Inventory</span>
+  </div>
+  <p id="p">Stay updated with the latest inventory – real-time stock, effortless tracking</p>
+</div>
+<!--cards section  1-->
+<div id="card" class="row justify-content-center gap-1">
+  <!-- Card 1 -->
+  <div class="col-md-3">
+    <div class="card">
+      <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="images/car-rent-1.png" class="img-fluid"/>
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+      </div>
+      <div class="card-body" style="background-color: #f4f5f8;">
+        <h5 class="card-title text-center text-uppercase mb-4">Mercedes-AMG GT</h5>
+        <div class="feature">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="px-2">
+              <i class="fa fa-car text-primary mr-1" style="color: #578FCA;"></i>
+              <span>2015</span>
+            </div>
+            <div class="px-2 auto">
+              <i class="fa fa-cogs text-primary mr-1"></i>
+              <span>Automatic</span>
+            </div>
+            <div class="px-2">
+              <i class="fa fa-road text-primary mr-1"></i>
+              <span>25K</span>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary px-3 rent_button" href="">₹55000.00/Day</a>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="col-md-3">
+    <div class="card">
+      <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="images/car-rent-2.png" class="img-fluid"/>
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+      </div>
+      <div class="card-body" style="background-color: #f4f5f8;">
+        <h5 class="card-title text-center text-uppercase mb-4">BMW X6 (F16)</h5>
+        <div class="feature">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="px-2">
+              <i class="fa fa-car text-primary mr-1" style="color: #578FCA;"></i>
+              <span>2014</span>
+            </div>
+            <div class="px-2 auto">
+              <i class="fa fa-cogs text-primary mr-1"></i>
+              <span>Automatic </span>
+            </div>
+            <div class="px-2">
+              <i class="fa fa-road text-primary mr-1"></i>
+              <span>10K</span>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary px-3 rent_button" href="">₹45000.00/Day</a>
+      </div>
+    </div>
+  </div>
+  <!-- Card 3 -->
+  <div class="col-md-3">
+    <div class="card">
+      <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="images/car-rent-3.png" class="img-fluid"/>
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+      </div>
+      <div class="card-body" style="background-color: #f4f5f8;">
+        <h5 class="card-title text-center text-uppercase mb-4">Audi R8 V10 Coupe</h5>
+        <div class="feature">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="px-2">
+              <i class="fa fa-car text-primary mr-1" style="color: #578FCA;"></i>
+              <span>2015</span>
+            </div>
+            <div class="px-2 auto">
+              <i class="fa fa-cogs text-primary mr-1"></i>
+              <span>Automatic</span>
+            </div>
+            <div class="px-2">
+              <i class="fa fa-road text-primary mr-1"></i>
+              <span>30K</span>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary px-3 rent_button" href="">₹95000.00/Day</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--card section 2-->
+<div id="card" class="row justify-content-center gap-1">
+  <!-- Card 4 -->
+  <div class="col-md-3">
+    <div class="card">
+      <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="images/car-rent-4.png" class="img-fluid"/>
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+      </div>
+      <div class="card-body" style="background-color: #f4f5f8;">
+        <h5 class="card-title text-center text-uppercase mb-4">Audi Q3</h5>
+        <div class="feature">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="px-2">
+              <i class="fa fa-car text-primary mr-1" style="color: #578FCA;"></i>
+              <span>2011</span>
+            </div>
+            <div class="px-2 auto">
+              <i class="fa fa-cogs text-primary mr-1"></i>
+              <span>Automatic</span>
+            </div>
+            <div class="px-2">
+              <i class="fa fa-road text-primary mr-1"></i>
+              <span>50k</span>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary px-3 rent_button" href="">₹6500.00/Day</a>
+      </div>
+    </div>
+  </div>
+  <!-- Card 5 -->
+  <div class="col-md-3">
+    <div class="card">
+      <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="images/car-rent-5.png" class="img-fluid"/>
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+      </div>
+      <div class="card-body" style="background-color: #f4f5f8;">
+        <h5 class="card-title text-center text-uppercase mb-4">Mercedes-Benz C-Class</h5>
+        <div class="feature">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="px-2">
+              <i class="fa fa-car text-primary mr-1" style="color: #578FCA;"></i>
+              <span>2021</span>
+            </div>
+            <div class="px-2 auto">
+              <i class="fa fa-cogs text-primary mr-1"></i>
+              <span>Automatic</span>
+            </div>
+            <div class="px-2">
+              <i class="fa fa-road text-primary mr-1"></i>
+              <span>65K</span>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary px-3 rent_button" href="">₹130,000.00/Day</a>
+      </div>
+    </div>
+  </div>
+  <!-- Card 6 -->
+  <div class="col-md-3">
+    <div class="card">
+      <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="images/car-rent-6.png" class="img-fluid"/>
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+      </div>
+      <div class="card-body" style="background-color: #f4f5f8;">
+        <h5 class="card-title text-center text-uppercase mb-4">Audi R8</h5>
+        <div class="feature">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="px-2">
+              <i class="fa fa-car text-primary mr-1" style="color: #578FCA;"></i>
+              <span>2006</span>
+            </div>
+            <div class="px-2 auto">
+              <i class="fa fa-cogs text-primary mr-1"></i>
+              <span>Automatic</span>
+            </div>
+            <div class="px-2">
+              <i class="fa fa-road text-primary mr-1"></i>
+              <span>75K</span>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary px-3 rent_button" href="">₹15000.00/Day</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--why choose us-->
+<div class="row support">
+  <div class="txt">
+      <p class="txt1 text-center">Why <span style="color: #0043ff8c;">Choose</span> Us</p>
+      <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, cupiditate!</p>
+  </div>
+<!--24 hour support  Best price-->
+  <div style="display: flex; align-items: center; margin-left: 200px; margin-bottom: 300px; ">
+    <i class="fa-solid fa-phone icon "></i>
+    <div class="txt-sec" style="margin-left: 15px; margin-top:15 px;">
+        <p class="support_txt" style="margin:0px ; ">24 Hour Support</p>
+        <p style="margin-left: 0px;"> Get assistance anytime for bookings,<br> roadside help, or queries.</p>
+    </div>
+
+    <i class="fa-solid fa-flag-checkered icon"style="margin-left: 300px;"></i> 
+    <div class="txt-sec" style="margin-left :15px; margin-top: 15px;">
+        <p class="support_txt" style="margin:0px ; ">Best Price</p>
+        <p style="margin-left: 0px;">  Rent at the lowest rates  for a worry-free <br>experience. </p>
+    </div>  
+</div> 
+</div>
+<!--verified license  free cancellation-->
+<div class="row support2" style="background-color: whitesmoke; height: 150px;">
+  <div style="display: flex; align-items: center; margin-left: 200px;  ">
+    <i class="fa-solid fa-certificate icon"></i>
+    <div class="txt-sec" style="margin-left: 15px; margin-top:15 px;">
+        <p class="support_txt" style="margin:0px ; ">Verified License</p>
+        <p style="margin-left: 0px;">  All our vehicles are registered, insured,<br> and safe to drive.</p>
+    </div>
+
+    <i class="fa-regular fa-circle-xmark icon" style="margin-left: 285px;"></i>
+    <div class="txt-sec" style="margin-left :15px; margin-top: 15px;">
+        <p class="support_txt" style="margin:0px ; ">Free Cancelation</p>
+        <p style="margin-left: 0px;"> Cancel anytime without extra charges for a<br> worry-free experience..</p>
+    </div>  
+
+    
+</div>
+
+<!--achievment-->
+<div class="review row " style="margin-top: 100px;">
+  <p id="achie">Our<span style="color: #0043ff8c;"> Achievement</span> </p>
+  <p id="txtachie">Lorem ipsum dolor sit amet loresa abnsabdn a san 
+  </p>
+  <div class="col-md-3 mx-auto text-center">  <div class="box">
+    <p class="txt1">4000+</p>
+    <p class="txtachie">Active Member</p>
+</div> </div>
+  <div class="col-md-3 mx-auto text-center"> 
+    <div class="box">
+      <p class="txt1">3000+</p>
+      <p class="txtachie">Car Available</p>
+  </div>   
+  </div>
+  <div class="col-md-3 mx-auto text-center"> 
+    <div class="box">
+      <p class="txt1">3500+</p>
+      <p class="txtachie">Car Model</p>
+  </div>
+  </div>
+  <div class="col-md-3 mx-auto text-center"> 
+    <div class="box">
+      <p class="txt1">10K</p>
+      <p class="txtachie">Positive Rating</p>
+  </div>
+  </div>
+
+</div>
+<!--ready to get start-->
+ <div class="get row">
+   <div class="col-md-6 text-center">
+     <div class="left">
+      <p class="txt1">Ready To Get Start?</p>
+      <p class="txtachie"> Ready to hit the road? 🚗✨ Book your ride now and experience <br>hassle-free car rentals with top-rated service, premium vehicles,<br> and unbeatable convenience. Let’s get you moving!" </p>
+      <div id="contanct">
+        <a  >
+          <button type="button" class="btn btn-light btn-rounded" data-mdb-ripple-init>Contanct US</button>
+         </a>
+      </div>
+        
+     </div>
+   </div>
+
+<!--right div for image -->
+   <div class="col-md-6 text-center right">
+    <img src="images/verna.png" alt="" width="380px"  height="200px">
+   </div>
+ </div>
+
+<!--footer-->
+<div  class="row footer" >
+  <!--get in touch-->
+ <div class="col-md-4">
+  <h4 class="text-uppercase mt-5 txt2 gettouch">Get In Touch</h4>
+  <p class="pt-3 text  gettouch"><i class="fa fa-map-marker-alt mr-3 "></i> &nbsp;123 Street, New York, USA</p>
+  <p class="text  gettouch"><i class="fa fa-phone-alt mr-3"></i>&nbsp;+012 345 67890</p>
+  <p class="text  gettouch"><i class="fa fa-envelope mr-3"></i>&nbsp; info@example.com</p>
+  
+  <p class="mt-4 txt2  gettouch">Follow Us</p>
+   <div class="container" style=" width:50%; margin-right: 190px; margin-bottom: 30px;">
+ <!--facebook-->
+    <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body icon2"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f mr-5"></i
+      ></a>
+<!--twitter-->
+<a
+data-mdb-ripple-init
+class="btn btn-link btn-floating btn-lg text-body icon2"
+href="#!"
+role="button"
+data-mdb-ripple-color="dark"ō
+><i class="fab fa-twitter"></i
+></a>
+<!--instagram-->
+<a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body icon2 "
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+   </div>
+ </div>
+ <!--useful links-->
+ <div class="col-md-4">
+  <h4 class="text-uppercase mt-5 txt2 gettouch">Useful Links</h4>
+  <div class=" useful_links"> 
+  <ul class="list-unstyled mb-0 text mx-auto">
+    <li>
+      <a href="#!" class="text-body ">Private Policy</a>
+    </li>
+    <li class="mt-2">
+      <a href="#!" class="text-body ">Term & Condition</a>
+    </li>
+    <li class="mt-2">
+      <a href="#!" class="text-body ">New Member Registration</a>
+    </li>
+    <li class="mt-2">
+      <a href="#!" class="text-body">Afilliate Program</a>
+    </li>
+    <li class="mt-2">
+      <a href="#!" class="text-body">Return & Refund</a>
+    </li>
+    <li class="mt-2">
+      <a href="#!" class="text-body">Help & FQAs</a>
+    </li>
+  </ul></div>
+ </div>
+ <!--newsletter-->
+ <div class="col-md-4">
+  <h4 class="text-uppercase mt-5 txt2 text-center">News Letter</h4>
+  <p class="text">Get the best car rental deals, exclusive discounts,
+    and travel tips delivered straight to your inbox! Subscribe now and make every ride smoother and more affordable.</p>
+  
+  <form  id="form"> 
+    <input type="email" class="form-control" style="padding: 15px;" name="email" placeholder="Your Email" required>
+    <button type="submit" class="sub">Subscribe</button>
+  </form>
+</div>
+
+   
+</div>
+ 
+<!-- Copyright -->
+<div class="text-center p-3 text" style="background-color: rgb(242, 239, 239) ">
+  © 2025 Copyright:
+  <a class="text-body   text" href="">RapidRentals</a>
+</div>
+<script src="javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>
